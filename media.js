@@ -17,13 +17,16 @@ var wavesurfer = Object.create(WaveSurfer);
 
 wavesurfer.init({
     container: "#wave",
-    waveColor: "#7d7d7dff", // тут можно поменять фоновый цвет плеера
-    progressColor: "#ffa600c3", // тут можно поменять цвет заполнения
-    height: 52, // высота плеера
+    waveColor: "#7D7D7D", // тут можно поменять фоновый цвет плеера
+    progressColor: "#D5A216", // тут можно поменять цвет заполнения
+    height: 48, // высота плеера
     scrollParent: false
 });
+
+
+
 //загружаем нужную песню
-wavesurfer.load("Uolt_Disnejj_-_chernjj_plashh_78231268.mp3");
+wavesurfer.load("sound.mp3");
 
 //play and pause a player
 playPause.addEventListener("click", function (e) {
